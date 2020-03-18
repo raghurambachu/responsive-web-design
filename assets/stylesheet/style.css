@@ -1,0 +1,433 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* General */
+*{
+	box-sizing: border-box;
+}
+
+body{
+	line-height: 1.5;
+	font-family: 'Patua One', cursive;
+	/* overflow-x: hidden; */
+}
+
+a{
+	text-decoration: none;
+}
+
+.flex{
+	display: flex;
+}
+
+.center-align{
+	text-align: center;
+}
+
+.padding{
+	padding: 100px 0;
+}
+
+.btn{
+	padding: 16px 42px;
+	font-weight: bold;
+	border-radius: 4px;
+}
+
+/* Container Section */
+
+.container{
+    max-width:1000px;
+    margin: 0 auto;
+}
+
+/* Typography */
+h1{
+	font-size: 48px;
+	letter-spacing: 2.5px;
+}
+
+h2{
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+h3{
+	font-size: 24px;
+	text-transform: uppercase;
+}
+
+/* Header Section */
+.header{
+    background: #1D2935;
+    padding: 20px 0;
+}
+
+.nav{
+	justify-content: space-between;
+	align-items: center;
+	
+}
+
+.nav a{
+	color: white;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.logo img{
+	width: 130px;
+	height: 44px;
+	object-fit: cover;
+}
+
+.nav li{
+	margin-left: 32px;
+}
+
+
+/* Hero Section */
+.hero-section{
+	text-align: center;
+	background: linear-gradient(#2C4B57,#4D9F7E);
+	padding: 150px 0;
+	color: whitesmoke;
+}
+
+.hero-container{
+	width: 750px;
+	margin: 0 auto;
+}
+
+.hero-section .hero-heading{
+	text-transform: uppercase;
+	font-weight: 700;
+	word-spacing: 24px;
+	
+}
+
+.hero-subheading{
+	font-size: 28px;
+	margin-top: 24px;
+}
+
+
+/* Portfolio Section */
+
+.portfolio-container,
+.location-container,
+.table-container,
+.details-container{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.portfolio-img-container{
+	flex-wrap: wrap;
+}
+
+.portfolio-img-container .portfolio-img{
+	flex: 1 1 calc(31% - 20px);
+	margin: 20px;
+}
+
+.portfolio-img img{
+	width: 100%;
+	object-fit: cover;
+}
+
+/* About Section */
+.about-section{
+	background: linear-gradient(#2A4553,#4C9F7E);
+	color: whitesmoke;
+	text-align: center;
+}
+
+.about-container{
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.about-content{
+	margin: 32px 0;
+	text-align: left;
+	line-height: 1.6;
+}
+
+.about-content-left,
+.about-content-right{
+	width: 50%;
+	font-size: 18px;
+	padding: 0 20px;
+}
+
+.btn-apply{
+	background: white;
+	border: 1.5px solid black;
+
+	
+}
+
+/* Contact Section */
+.contact-section{
+	text-align: center;
+}
+
+.form{
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+input,
+textarea{
+	display: block;
+	width: 100%;
+	border: none;
+	margin: 24px 0;
+	font-size: 22px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid black;
+	outline: none;
+
+}
+
+textarea{
+	height: 200px;
+}
+
+.btn-send{
+	background: #316D5E;
+	color: whitesmoke;
+	border: none;
+	outline: none;
+}
+
+/* Location Section */
+
+.location-section{
+	background: #BDC7D2;
+}
+
+/* .iframe{
+	width:80% ;
+	height:450px ;
+}
+
+iframe{
+	width: 100%;
+	height: 100%;
+	border:2px solid black;
+} */
+
+/* Table Section */
+.table-section{
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.table{
+	margin-top: 32px;
+}
+
+.table-section td,
+.table-section th{
+	padding-right: 150px;
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+.table-section thead{
+	background: #1E2639;
+	color: #215875;
+}
+
+.table tbody td:first-child{
+	color: #CE5B71;
+	padding-left: 16px;
+}
+
+.table tbody tr:nth-child(odd){
+	background: #323C50;
+}
+
+.table tbody tr:nth-child(even){
+	background: #2B3346;
+}
+
+/* Details Section */
+.col-1-3{
+	width: 30%;
+}
+
+.social-icons ul{
+	justify-content: center;
+	align-items: center;
+}
+
+.details-content{
+	justify-content: baseline;
+	align-items: baseline;
+}
+
+.details-section{
+	text-align: center;
+	background: #2C3E50;
+	color: #DFF5E1;
+}
+
+.details-content h3{
+	color: #DFF5E1;
+}
+
+.details-para{
+	margin: 10px 0;
+}
+
+/* .col-1-3 h3{
+	color: whitesmoke;
+} */
+
+.social-icons ul{
+	margin: 10px 0;
+}
+
+.social-icons li{
+	margin:0 6px;
+}
+
+.social-icons a{
+	color: white;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border: 1.25px solid whitesmoke;
+	border-radius: 50%;
+	padding: 3px;
+}
+
+/* Footer Section */
+.footer{
+	background: #18242E;
+	padding: 20px 0;
+	text-align: center;
+	color: whitesmoke;
+}
+
+/* Responsive CSS */
+@media all and (max-width:960px){
+	.container,
+	.hero-container,
+	.portfolio-img-container,
+	.table-container,
+	.location-container{
+		width: 600px;
+		margin: 0 auto;
+	}
+
+
+	.contact-section .about-container{
+		width: 500px;
+		margin: 0 auto;
+	}
+
+	.margin-res{
+		margin-bottom: 30px;
+	}
+
+	.iframe{
+		width: 60%;
+	}
+
+	.flex-column{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.table-container,
+	.location-container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.location-container{
+		width: 80%;
+	}
+
+	.table-section td,
+	.table-section th{
+		padding-right: 80px;
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+
+}
+
+@media all and (max-width:500px){
+	
+	.container,
+	.hero-container,
+	.portfolio-img-container,
+	.table-container,
+	.location-container,
+	.about-container{
+		width: 400px;
+		margin: 0 auto;
+	}
+
+	.table-section td,
+	.table-section th{
+		padding-right: 60px;
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+}
