@@ -19,11 +19,27 @@
                 <a href="#" class="logo">
                     <img src="assets/media/altcampus.png" alt="">
                 </a>
+                <label for="toggle" class="bars">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <input id="toggle" class="toggle" type="checkbox" />
                 <ul class="nav-menu flex">
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">More</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item nav-last-item">
+                        <a class="nav-link" href="#">
+                            More
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <div class="sub-menu-box">
+                            <ul class="sub-menu">
+                                <li><a href="#">Altcampus</a></li>
+                                <li><a href="#">Google</a></li>
+                                <li><a href="#">Program</a></li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -82,10 +98,10 @@
 
         </section>
         <section class="contact-section padding">
-            <div class="about-container">
+            <div class="about-container padding-res">
                 <h2>Contact Me</h2>
                 <form action="#" class="flex form">
-                    <input type="text" placeholder="Name">
+                    <input class="name" type="text" placeholder="Name">
                     <input type="email" placeholder="Email Address">
                     <input type="text" placeholder="Phone Number"> 
                     <textarea name="message" placeholder="Message" rows="10"></textarea> 
